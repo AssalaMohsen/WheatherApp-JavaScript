@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Weather</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg p-0">
+      <div
+        class="container-fluid container-md d-flex justify-content-between py-5 px-0 ms-0 me-0 ms-md-auto me-md-auto">
+        <div class="container-fluid d-flex justify-content-between p-md-0">
+          <a class="p-0 m-0 d-flex" href="#">
+            <div><img src="images/logo.png" alt=""></div>
+            <div class="ms-3">
+              <h1 class="title">Weather</h1><small class="details">tagline goes here</small>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse mx-3 mx-md-0 pt-4 pt-lg-0" id="collapsibleNavId">
+          <ul class="navbar-nav mt-2 mt-lg-0 w-100">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item border-0">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-5">
+      <div class="row my-4 mx-2 mx-md-0">
+        <div class="col-12 px-0 position-relative">
+          <input type="text" id="searchInput" class="input-field border-0 rounded-pill"
+            placeholder="Find your location...">
+          <button id="searchBtn" type="button" class="rounded-pill position-absolute">Find</button>
+        </div>
+      </div>
+      <div class="row mx-2 mx-md-0" id="forecast-panel">
+        <div class="col-lg-4 p-0" id="current">
+
+        </div>
+        <div class="col-lg-4 p-0 forecast mid">
+
+        </div>
+        <div class="col-lg-4 p-0 forecast">
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container py-5">
+      <div class="row mb-4 mx-2 mx-md-0">
+        <div class="col-md-8 px-0 position-relative">
+          <input type="text" class="input-field border-0 rounded-pill" placeholder="Enter your email to subscribe...">
+          <button type="button" class="rounded-pill position-absolute">Subscribe</button>
+        </div>
+        <div class="col-md-4 px-3 py-3 py-md-0 d-flex justify-content-md-center">
+          <div class="social-links mt-2">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
